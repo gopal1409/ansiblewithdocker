@@ -16,7 +16,7 @@
       
   - name: add signing key
     ansible.builtin.apt_key:
-      url: "https://download.docker.com/linux/ubuntu/{{ ansible_distribution | lower }}/gpg"
+      url: "https://download.docker.com/linux/ubuntu/gpg"
       state: present
       
   - name: add the repo into source list
