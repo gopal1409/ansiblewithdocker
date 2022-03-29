@@ -1,5 +1,6 @@
 ---
 - name: install docker
+  hosts: all
   become: true
   tasks:
   - name: install apt-transport-https
