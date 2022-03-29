@@ -26,8 +26,5 @@
     command: apt-get update -y  
     
   - name: install docker-ce
-    ansible.builtin.apt:
-      name: "docker-ce"
-      state: latest
-      update_cache: true
+    command: apt-get install docker-ce docker-ce-cli containerd.io -y
       
